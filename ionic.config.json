@@ -1,0 +1,7 @@
+{
+  "name": "kelmobprog",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

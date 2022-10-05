@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+        Card Mahasiswa
+        <ion-icon name="arrow-back-circle-sharp" style="margin-left: 34%;" (click)="Logout()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card style="margin:20px; padding: 20px;">
+    
+    <ion-card-header>
+      <ion-card-subtitle>Selamat Datang</ion-card-subtitle>
+      <ion-card-title>{{name}}</ion-card-title>
+      <img src="{{photo}}" alt="" />
+    </ion-card-header>
+    <ion-card-content>
+      <img src="{{qr}}" alt="" />
+    </ion-card-content>
+  </ion-card>
+</ion-content>
