@@ -76,7 +76,7 @@ export class LoginPage implements OnInit {
         } else {
         await loading.present();
         data = this.http.get(
-        'http://192.168.43.24/apiNew/api/loginn/' +
+        'http://192.168.43.24:/apiNew/api/loginn/' +
           this.email +
           '/' +
           this.password
@@ -96,7 +96,7 @@ export class LoginPage implements OnInit {
                     localStorage.setItem('isLoggedIn', this.results.result[0]);
                     loader.dismiss();
             this.email = null;
-            this.navCtrl.navigateRoot(['/tabs/tab1/']);
+            this.navCtrl.navigateRoot(['/student-card']);
             this.password = null;
             console.log(this.results)
           } else {

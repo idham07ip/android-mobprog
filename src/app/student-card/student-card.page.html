@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title slot="start">Student Card</ion-title>
+        <ion-icon name="arrow-back-circle-sharp" slot="end" (click)="Logout()">Logout</ion-icon>
+    </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="bg-image">
+        <ion-card-title class="ion-text-center">Welcome Aboard</ion-card-title>
+       
+        <img src="{{photo}}" alt="" class="center"/>
+        <h3 class="ion-text-center">{{name}}</h3>
+        <br>
+        <ion-card-title class="ion-text-center">Scan this QR Code right below</ion-card-title>
+        <br>
+            <ion-img [src]="qr" class="center"></ion-img>
+
+    </ion-content>
+

@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { Storage } from '@ionic/storage';
+
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-student-card',
+  templateUrl: './student-card.page.html',
+  styleUrls: ['./student-card.page.scss'],
 })
-export class Tab1Page {
+export class StudentCardPage{
+
   public name: string;
   public photo: string;
   public qr: string;
